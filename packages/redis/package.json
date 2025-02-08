@@ -1,0 +1,32 @@
+{
+  "name": "@zigasebenik/node-red-context-redis",
+  "version": "0.0.6",
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "name": "Žiga Šebenik"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "context",
+    "storage",
+    "redis"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebenik/node-red-context/issues"
+  },
+  "homepage": "https://github.com/sebenik/node-red-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebenik/node-red-context"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@zigasebenik/node-red-context-base": "workspace:^",
+    "ioredis": "^5.4.2",
+    "unstorage": "^1.14.4"
+  }
+}

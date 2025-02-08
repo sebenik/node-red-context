@@ -1,0 +1,35 @@
+{
+  "name": "@zigasebenik/node-red-context-mysql",
+  "version": "0.0.6",
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "name": "Žiga Šebenik"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "context",
+    "storage",
+    "mysql",
+    "mariadb",
+    "sql"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebenik/node-red-context/issues"
+  },
+  "homepage": "https://github.com/sebenik/node-red-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebenik/node-red-context"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@zigasebenik/node-red-context-base": "workspace:^",
+    "db0": "^0.2.3",
+    "mysql2": "^3.12.0",
+    "unstorage": "^1.14.4"
+  }
+}

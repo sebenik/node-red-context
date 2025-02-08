@@ -1,0 +1,27 @@
+{
+  "name": "@zigasebenik/node-red-context",
+  "private": true,
+  "author": {
+    "name": "Žiga Šebenik"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "context",
+    "storage"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebenik/node-red-context/issues"
+  },
+  "homepage": "https://github.com/sebenik/node-red-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebenik/node-red-context"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.9"
+  }
+}

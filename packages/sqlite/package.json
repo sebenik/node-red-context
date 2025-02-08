@@ -1,0 +1,34 @@
+{
+  "name": "@zigasebenik/node-red-context-sqlite",
+  "version": "0.0.6",
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "name": "Žiga Šebenik"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "context",
+    "storage",
+    "sqlite",
+    "sql"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebenik/node-red-context/issues"
+  },
+  "homepage": "https://github.com/sebenik/node-red-context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebenik/node-red-context"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@zigasebenik/node-red-context-base": "workspace:^",
+    "better-sqlite3": "^11.8.1",
+    "db0": "^0.2.3",
+    "unstorage": "^1.14.4"
+  }
+}
