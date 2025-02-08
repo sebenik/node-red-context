@@ -2,9 +2,8 @@ const BaseContext = require('@zigasebenik/node-red-context-base');
 const { createDatabase } = require('db0');
 const dbDriver = require('unstorage/drivers/db0');
 const postgresql = require('db0/connectors/postgresql');
-const { connectors } = require('db0');
 
-class RedisContext extends BaseContext {
+class PostgreSQLContext extends BaseContext {
   async open() {
     try {
       this.storage = this.createStorage({
@@ -23,5 +22,5 @@ class RedisContext extends BaseContext {
 }
 
 module.exports = function(options) {
-    return new RedisContext(options);
+    return new PostgreSQLContext(options);
 };

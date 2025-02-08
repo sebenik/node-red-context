@@ -3,7 +3,7 @@ const { createDatabase } = require('db0');
 const dbDriver = require('unstorage/drivers/db0');
 const sqlite = require('db0/connectors/better-sqlite3');
 
-class RedisContext extends BaseContext {
+class SQLiteContext extends BaseContext {
   async open() {
     try {
       this.storage = this.createStorage({
@@ -22,5 +22,5 @@ class RedisContext extends BaseContext {
 }
 
 module.exports = function (options) {
-  return new RedisContext(options);
+  return new SQLiteContext(options);
 };
