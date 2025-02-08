@@ -27,9 +27,10 @@
   },
   "dependencies": {
     "@types/pg": "^8.11.11",
-    "@zigasebenik/node-red-context-base": "workspace:^",
+    "@zigasebenik/node-red-context-base": "^1.0.0",
     "db0": "^0.2.3",
     "pg": "^8.13.1",
     "unstorage": "^1.14.4"
-  }
+  },
+  "gitHead": "772093442d36dd73312766eb8a0bc62d981f3920"
 }

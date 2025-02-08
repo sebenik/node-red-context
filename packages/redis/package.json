@@ -25,8 +25,9 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@zigasebenik/node-red-context-base": "workspace:^",
+    "@zigasebenik/node-red-context-base": "^1.0.0",
     "ioredis": "^5.4.2",
     "unstorage": "^1.14.4"
-  }
+  },
+  "gitHead": "772093442d36dd73312766eb8a0bc62d981f3920"
 }

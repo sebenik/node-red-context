@@ -25,5 +25,6 @@
   },
   "dependencies": {
     "unstorage": "^1.14.4"
-  }
+  },
+  "gitHead": "772093442d36dd73312766eb8a0bc62d981f3920"
 }
