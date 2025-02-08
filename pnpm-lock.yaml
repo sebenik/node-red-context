@@ -21,7 +21,7 @@ importers:
   packages/mysql:
     dependencies:
       '@zigasebenik/node-red-context-base':
-        specifier: workspace:^
+        specifier: ^1.0.1
         version: link:../base
       db0:
         specifier: ^0.2.3
@@ -39,7 +39,7 @@ importers:
         specifier: ^8.11.11
         version: 8.11.11
       '@zigasebenik/node-red-context-base':
-        specifier: workspace:^
+        specifier: ^1.0.1
         version: link:../base
       db0:
         specifier: ^0.2.3
@@ -54,7 +54,7 @@ importers:
   packages/redis:
     dependencies:
       '@zigasebenik/node-red-context-base':
-        specifier: workspace:^
+        specifier: ^1.0.1
         version: link:../base
       ioredis:
         specifier: ^5.4.2
@@ -66,7 +66,7 @@ importers:
   packages/sqlite:
     dependencies:
       '@zigasebenik/node-red-context-base':
-        specifier: workspace:^
+        specifier: ^1.0.1
         version: link:../base
       better-sqlite3:
         specifier: ^11.8.1
