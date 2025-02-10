@@ -119,7 +119,11 @@ class BaseContext {
         for (const k of key) {
           const keyParts = normalizePropertyExpression(k);
           const pKey = keyParts[0];
-          const pValue = await this.storage.get(this.#getKey(scope, pKey));
+          let pValue;
+          const hasValue = await this.storage.has(this.#getKey(scope, pKey));
+          if (hasValue) {
+            pValue = await this.storage.get(this.#getKey(scope, pKey));
+          }
           if (keyParts.length === 1) {
             values.push(pValue);
           } else {
