@@ -1,6 +1,6 @@
 {
   "name": "@zigasebenik/node-red-context-redis",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "author": {
@@ -25,7 +25,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@zigasebenik/node-red-context-base": "^1.0.4",
+    "@zigasebenik/node-red-context-base": "^1.0.5",
     "ioredis": "^5.4.2",
     "unstorage": "^1.14.4"
   },

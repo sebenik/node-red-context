@@ -1,6 +1,6 @@
 {
   "name": "@zigasebenik/node-red-context-mysql",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "author": {
@@ -27,7 +27,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@zigasebenik/node-red-context-base": "^1.0.4",
+    "@zigasebenik/node-red-context-base": "^1.0.5",
     "db0": "^0.2.3",
     "mysql2": "^3.12.0",
     "unstorage": "^1.14.4"
