@@ -75,8 +75,8 @@ class BaseContext {
       if (!key) { throw new Error('Key is not defined'); }
       if (!callback || typeof callback !== 'function') { throw new Error('Callback is not a function'); }
 
-      if (!Array.isArray(key)) { key = [key]; }
-      if (!Array.isArray(value)) { value = [value]; }
+      if (!Array.isArray(key)) { key = [key]; value = [value]; }
+      else if (!Array.isArray(value)) { value = [value]; }
 
       if (key.length !== value.length) { throw new Error('Number of values don\'t match number of keys'); }
 
@@ -139,6 +139,7 @@ class BaseContext {
       if (!callback || typeof callback !== 'function') { throw new Error('Callback is not a function'); }
 
       try {
+        scope = this.options.keyPrefix ? `${this.options.keyPrefix}${scope}` : scope;
         const keys = await this.storage.keys(scope);
         const sKeys = keys.map((k) => k.replace(`${scope}:`, ''));
         callback(null, sKeys);
@@ -151,6 +152,7 @@ class BaseContext {
   delete(scope) {
     return this.queue.enqueue(async () => {
       try {
+        scope = this.options.keyPrefix ? `${this.options.keyPrefix}${scope}` : scope;
         await this.storage.clear(scope);
       } catch (err) {
         console.error(err);
