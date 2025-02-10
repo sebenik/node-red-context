@@ -26,11 +26,11 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@types/pg": "^8.11.11",
+    "@types/pg": "8.11.11",
     "@zigasebenik/node-red-context-base": "^1.0.5",
-    "db0": "^0.2.3",
-    "pg": "^8.13.1",
-    "unstorage": "^1.14.4"
+    "db0": "0.2.3",
+    "pg": "8.13.1",
+    "unstorage": "1.14.4"
   },
   "gitHead": "b97e50fe794a882da31e1942a0e937bf8be48af5"
 }

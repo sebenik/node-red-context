@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@zigasebenik/node-red-context-base": "^1.0.5",
-    "better-sqlite3": "^11.8.1",
-    "db0": "^0.2.3",
-    "unstorage": "^1.14.4"
+    "better-sqlite3": "11.8.1",
+    "db0": "0.2.3",
+    "unstorage": "1.14.4"
   },
   "gitHead": "b97e50fe794a882da31e1942a0e937bf8be48af5"
 }

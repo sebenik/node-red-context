@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "@zigasebenik/node-red-context-base": "^1.0.5",
-    "ioredis": "^5.4.2",
-    "unstorage": "^1.14.4"
+    "ioredis": "5.4.2",
+    "unstorage": "1.14.4"
   },
   "gitHead": "b97e50fe794a882da31e1942a0e937bf8be48af5"
 }

@@ -14,6 +14,12 @@ class RedisContext extends BaseContext {
       throw new Error(err);
     }
   }
+
+  getKeysScope(scope) {
+    return this.options.keyPrefix
+      ? `${this.options.keyPrefix}${scope}`
+      : scope;
+  }
 }
 
 module.exports = function(options) {

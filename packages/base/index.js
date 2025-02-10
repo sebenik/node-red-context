@@ -59,6 +59,10 @@ class BaseContext {
     return `${scope}:${key}`;
   }
 
+  getKeysScope(scope) {
+    return scope;
+  }
+
   async open() {
     throw new Error();
   }
@@ -143,7 +147,7 @@ class BaseContext {
       if (!callback || typeof callback !== 'function') { throw new Error('Callback is not a function'); }
 
       try {
-        scope = this.options.keyPrefix ? `${this.options.keyPrefix}${scope}` : scope;
+        scope = this.getKeysScope(scope);
         const keys = await this.storage.keys(scope);
         const sKeys = keys.map((k) => k.replace(`${scope}:`, ''));
         callback(null, sKeys);
@@ -156,8 +160,13 @@ class BaseContext {
   delete(scope) {
     return this.queue.enqueue(async () => {
       try {
-        scope = this.options.keyPrefix ? `${this.options.keyPrefix}${scope}` : scope;
-        await this.storage.clear(scope);
+        await this.keys(scope, async (err, keys) => {
+          if (!err && keys) {
+            for (const key of keys) {
+              await this.storage.remove(this.#getKey(scope, key));
+            }
+          }
+        });
       } catch (err) {
         console.error(err);
       }
